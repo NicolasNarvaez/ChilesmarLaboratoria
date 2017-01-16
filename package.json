@@ -1,0 +1,19 @@
+{
+  "name": "chilesmar_laboratoria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasNarvaez/ChilesmarLaboratoria.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolasNarvaez/ChilesmarLaboratoria/issues"
+  },
+  "homepage": "https://github.com/NicolasNarvaez/ChilesmarLaboratoria#readme"
+}
