@@ -10,12 +10,34 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-<h1>hola</h1>
-<!--empieza-->
-<section id="nav"></section>
-<!--termina-->
-<section id="banner"></section>
-<!--empieza-->
+	<section id="nav">
+		<nav class="navbar navbar-default navbar-fixed-top">
+	  		<div class="container">
+	   			<div class="navbar-header">
+	      			<a class="navbar-brand" href="#">ChileEsMar</a>
+	    		</div>
+	    		<ul class="nav navbar-nav pull-right">
+			    	<li class="active"><a href="#">Home</a></li>
+			      	<li><a href="#">Enciclopedia</a></li>
+			      	<li><a href="#">Ingresar</a></li>
+			      	<li><a href="#">Registrarse</a></li>
+	    		</ul>
+	  		</div>
+		</nav>
+	</section>
+	
+
+
+<section id="banner">
+	<div class="row">
+		<div class="col-md-12 banner">
+			<h1 class="banner">
+				Hola
+			</h1>
+		</div>
+	</div>
+</section>
+
 <section id="ficha"></section>
 <!--termina-->
 <section id="datos"></section>
@@ -24,5 +46,18 @@
 <!--termina-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="../index.js"></script>
+<script>
+	$('a[href*="#"]:not([href="#"])').click(function() {
+	  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+	var target = $(this.hash);
+	target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	if (target.length) {
+  	$('html, body').animate({scrollTop: target.offset().top
+  	}, 1000);
+			   	return false;
+			}
+			}	
+	});
+</script>
 </body>
 </html>
