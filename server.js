@@ -1,5 +1,12 @@
-var cfg = require('./cfg.js'),
-  express = require('express'),
+var cfg;
+try {
+	cfg = require('./cfg.js');
+}
+catch(e) {
+	cfg = require('./cfg.example.js');
+}
+console.log(cfg)
+var express = require('express'),
   bodyParser = require('body-parser'),
   app = express();
 
@@ -12,8 +19,8 @@ app.use(function(req, res, next) {
 	next()
 })
 
+// app.use('/api', )
 app.use('/',  express.static("./public"))
-
 
 app.listen(cfg.port)
 console.log("running in "+cfg.port)
