@@ -1,12 +1,67 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--separacion-->
+	<title>Desafio</title>
+	<!--separacion-->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<!--separacion-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<section id="nav">
+		<nav class="navbar navbar-default navbar-fixed-top">
+	  		<div class="container">
+	   			<div class="navbar-header">
+	      			<a class="navbar-brand" href="#">ChileEsMar</a>
+	    		</div>
+	    		<ul class="nav navbar-nav pull-right">
+			    	<li class="active"><a href="#">Home</a></li>
+			      	<li><a href="#">Enciclopedia</a></li>
+			      	<li><a href="#">Ingresar</a></li>
+			      	<li><a href="#">Registrarse</a></li>
+	    		</ul>
+	  		</div>
+		</nav>
+	</section>
+	
 
-<html>
-	<head>
-		
-	</head>
-	<body>
-	<p>
-		index.html
-	</p>
-	</body>
+
+<section id="banner">
+	<div class="row">
+		<div class="col-md-12 banner">
+			<h1 class="banner">
+				Hola
+			</h1>
+		</div>
+	</div>
+</section>
+<section id="ficha"></section>
+<!--termina-->
+<section id="datos"></section>
+<!--empieza-->
+<section id="registro">
+	<div class="container-fluid">
+		<div class="row">
+			<div></div>
+		</div>
+	</div>
+</section>
+<!--termina-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	$('a[href*="#"]:not([href="#"])').click(function() {
+	  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+	var target = $(this.hash);
+	target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	if (target.length) {
+  	$('html, body').animate({scrollTop: target.offset().top
+  	}, 1000);
+			   	return false;
+			}
+			}	
+	});
+</script>
+</body>
 </html>
