@@ -19,8 +19,8 @@
           </div>
           <ul class="nav navbar-nav pull-right">
             <li><a href="#enciclopedia" id="enciclopedia-btn">Enciclopedia de especies</a></li>
-            <li><a href="#">Enlace 1</a></li>
-            <li><a href="#">Enlace 2</a></li>
+<!--             <li><a href="#">Enlace 1</a></li>
+            <li><a href="#">Enlace 2</a></li> -->
             <li><a class="registro" href="#">Ingresar</a></li>
             <li><a class="registro" href="#">Registrarse</a></li>
           </ul>
@@ -227,11 +227,17 @@
           </div>
         </div>
         <div class="recetario col-lg-12">
-          <img src="http://lorempixel.com/400/200/food/" alt="receta" class="col-lg-5">
+          <img src="img/hqdefault.jpg" alt="receta" class="col-lg-5 imagen-receta">
           <p class="producto-ficha col-lg-5 text-center">
             <div class="recipe col-lg-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint necessitatibus, iusto quis illum provident deleniti et suscipit totam explicabo rerum officia dicta. Illo ducimus, voluptate nesciunt iusto commodi quo quisquam!
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eveniet cupiditate harum perferendis itaque, natus ducimus facilis, possimus a iure corrupti necessitatibus libero ab nulla quaerat magnam fugiat eos odio?
+              <h3>Chupe de Jibia</h3>
+              1.- hacer un sofrito con la cebolla, el ajo, y los pimentones cortados en cubos muy pequeños
+              2.- Remojar el pan en leche
+              3.- incorporar el pan remojado y procesado al sofrito
+              4.- agregar la jibia precisamente cocida y picada en cubos y la rica rica
+              5.- ir agregando de a poco el caldo y. la leche evaporada a medida que lo va necesitando
+              6.- dejar en pailas, poner quedó al centro y terminar con pan rallado
+              7.- hornear por 25 minutos.
             </div>
             <div class="col-lg-2 text-center">
               <a href="#" class="btn-success col-lg-12" id="info-2">
@@ -410,7 +416,7 @@
               <div class="row">
                 <div>
                   <div class="col-md-4">
-                    <div class="mapa"></div>
+                    <div class="mapa" id="map"></div>
                   </div>
                   <div class="col-md-4">
                     <div>
@@ -495,6 +501,23 @@
           }
         }   
       });
+    </script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDF_Wz7JkGJnoxP4QVjugmobS1rrkpj4zY&callback=iniciar"></script>
+    <script>
+       function iniciar(position){
+          var mapOptions = {
+          // center: new google.maps.LatLng(-33.41921,-70.6418611),
+            center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          var map = new google.maps.Map(document.getElementById("map"),mapOptions);          var marker2 = new google.maps.Marker({
+              position: map.getCenter(),
+              title: 'You are Here',
+              map: map
+            });
+      };
+      navigator.geolocation.getCurrentPosition(iniciar);
     </script>
     <script type="text/javascript" src="js/ficha.js"></script>
     <script type="text/javascript" src="js/registro.js"></script>
