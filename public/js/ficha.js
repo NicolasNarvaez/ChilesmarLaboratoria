@@ -1,4 +1,5 @@
-$( document ).ready(function() {
+$( document ).ready(function(ev) {
+	ev.preventDefault;
 	$(".recetario").hide();
 
 	$( "#receta-btn" ).click(function() {
