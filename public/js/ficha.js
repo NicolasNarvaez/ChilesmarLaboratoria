@@ -1,4 +1,5 @@
-$( document ).ready(function() {
+$( document ).ready(function(ev) {
+	ev.preventDefault;
 	$(".recetario").hide();
 	$("#registro").hide();
 	$(".perfil-pescador").hide();
