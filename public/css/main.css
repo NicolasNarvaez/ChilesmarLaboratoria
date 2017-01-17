@@ -5806,5 +5806,16 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+#ficha {
+  padding: 30px 0; }
+  #ficha h2 {
+    padding-bottom: 20px; }
+  #ficha .vertical-centered-text {
+    -ms-display: flex;
+    display: flex;
+    /* alineacion vertical */
+    align-items: center;
+    /* alineacion horizontal */
+    justify-content: center; }
 
 /*# sourceMappingURL=main.css.map */
