@@ -1,12 +1,85 @@
 //estilos aqui
-#nav  {
-	border-bottom: 1px solid black;
+#nav {	
+	.navbar-brand {
+		color:#008d92;
+	}
+	ul {
+		.registro {
+			color:#008d92;
+			border:1px solid #008d92;
+			border-radius:5px;
+			padding-top:5px;
+			padding-bottom:5px;
+			margin-top:10px;
+			margin-left:5px;
+			&:hover {
+				background-color:#99bfb5;
+
+			}
+		}
+	}
+
 }
 
-.banner {
-	padding-top:200px;
-	width:300px;
-	height:250px;
-	border:1px solid #6C95D9;
-	background-color:red;
+#banner {
+	background-color: #0a6067;
+	padding-bottom:100px;
+	.mensaje {
+		color:#008d92;
+		margin-top:150px;
+		margin-left:380px;
+		width:500px;
+		padding:80px;
+		border:1px solid #008d92;
+	}
+
+	span i {
+		margin-left:615px;
+		margin-top:50px;
+		font-size:40px;
+	}
+
+
+
+
+}
+
+#enciclopedia {
+	border-top:1px solid #E4E2F0;
+	padding-top:30px;
+	h1 {
+		color:#008d92;
+		padding:20px;
+	}
+	.style-enci {
+		margin-bottom:10px;
+		.especie {
+			color:#008d92;
+			padding: 30px;
+			padding-bottom:60px;
+			border:1px solid #E4E2F0;
+			&:hover {
+				background-color:#64b0a8;
+				.foto {
+					border:1px solid #B5B4BF;
+				}
+
+			}
+			.foto {
+				padding:20px;
+				border-radius:5px;
+				border:1px solid #E4E2F0;
+				margin-bottom:15px;
+			}
+		}
+		
+	}
+}
+
+footer {
+	// position: absolute;
+	// bottom: 
+	background-color: #008d92;
+	width:100%;
+	padding:30px;
 }
