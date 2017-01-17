@@ -5806,19 +5806,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-<<<<<<< HEAD
-#ficha {
-  padding: 30px 0; }
-  #ficha h2 {
-    padding-bottom: 20px; }
-  #ficha .vertical-centered-text {
-    -ms-display: flex;
-    display: flex;
-    /* alineacion vertical */
-    align-items: center;
-    /* alineacion horizontal */
-    justify-content: center; }
-=======
 #nav {
   border-bottom: 1px solid black; }
 
@@ -5828,6 +5815,15 @@ button.close {
   height: 250px;
   border: 1px solid #6C95D9;
   background-color: red; }
+
+#ficha {
+  padding: 40px 0; }
+  #ficha h2 {
+    padding-bottom: 20px; }
+  #ficha .vertical-centered {
+    margin-top: 70px; }
+  #ficha .btn-success {
+    padding: 40px; }
 
 #datos-pescadores {
   margin-top: 5em; }
@@ -5860,6 +5856,5 @@ button.close {
 .jumbotron .tam {
   width: 100%;
   height: 200px; }
->>>>>>> 3e047119ac5c6c47f48d2bce5d5be5c9cbf73707
 
 /*# sourceMappingURL=main.css.map */
