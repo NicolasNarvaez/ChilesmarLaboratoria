@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Questrial");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -4291,8 +4292,8 @@ a.badge:hover, a.badge:focus {
   cursor: pointer; }
 
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin-bottom: 30px;
   color: inherit;
   background-color: #eeeeee; }
@@ -4313,8 +4314,8 @@ a.badge:hover, a.badge:focus {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron {
-      padding-top: 48px;
-      padding-bottom: 48px; }
+      padding-top: 40px;
+      padding-bottom: 40px; }
       .container .jumbotron, .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
@@ -5806,14 +5807,134 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-#nav {
-  border-bottom: 1px solid black; }
+#nav .navbar-brand {
+  color: #008d92; }
+#nav ul .registro {
+  color: #008d92;
+  border: 1px solid #008d92;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 5px; }
+  #nav ul .registro:hover {
+    background-color: #99bfb5; }
 
-.banner {
-  padding-top: 200px;
-  width: 300px;
-  height: 250px;
-  border: 1px solid #6C95D9;
-  background-color: red; }
+#banner {
+  background-color: #0a6067;
+  padding-bottom: 100px; }
+  #banner .mensaje {
+    color: #008d92;
+    margin-top: 150px;
+    margin-left: 380px;
+    width: 500px;
+    padding: 80px;
+    border: 1px solid #008d92; }
+  #banner span i {
+    margin-left: 615px;
+    margin-top: 50px;
+    font-size: 40px; }
+
+#enciclopedia {
+  border-top: 1px solid #E4E2F0;
+  padding-top: 30px; }
+  #enciclopedia h1 {
+    color: #008d92;
+    padding: 20px; }
+  #enciclopedia .style-enci {
+    margin-bottom: 10px; }
+    #enciclopedia .style-enci .especie {
+      color: #008d92;
+      padding: 30px;
+      padding-bottom: 60px;
+      border: 1px solid #E4E2F0; }
+      #enciclopedia .style-enci .especie:hover {
+        background-color: #64b0a8; }
+        #enciclopedia .style-enci .especie:hover .foto {
+          border: 1px solid #B5B4BF; }
+      #enciclopedia .style-enci .especie .foto {
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #E4E2F0;
+        margin-bottom: 15px; }
+
+footer {
+  background-color: #008d92;
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 10px; }
+
+#ficha {
+  padding: 40px 0; }
+  #ficha h2 {
+    padding-bottom: 20px; }
+  #ficha .vertical-centered {
+    margin-top: 70px; }
+  #ficha .btn-success {
+    padding: 40px; }
+  #ficha .recetario {
+    margin-top: 20px; }
+
+#registro .mp-nombre {
+  margin-top: 10%; }
+#registro .mp-editar {
+  margin-top: 5%; }
+#registro .mp-formulario-venta {
+  margin-top: 3%; }
+#registro .mp-medida {
+  margin-top: 2.5%;
+  margin-left: -2.5%; }
+
+#datos-pescadores {
+  margin-top: 5em; }
+
+#datos-pescadores .mapa {
+  width: 100%;
+  height: 572px;
+  background: #909090; }
+
+.jumbotron {
+  padding: 10px !important; }
+
+.jumbotron .img-perfil {
+  background: #909090;
+  width: 100%;
+  height: 149px; }
+
+.jumbotron .img-perfil-mas {
+  background: #909090;
+  width: 100%;
+  height: 206px; }
+
+.datos p {
+  font-size: 14px; }
+
+.datos-lorem p {
+  margin-top: 10px;
+  font-size: 14px; }
+
+.jumbotron .tam {
+  width: 100%;
+  height: 200px; }
+
+* {
+  font-family: "Questrial", sans-serif; }
+
+body {
+  position: relative; }
+  body .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
+
+.mod {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 4;
+  color: white;
+  width: 90%;
+  height: 80vh;
+  top: 0;
+  margin: 5%; }
 
 /*# sourceMappingURL=main.css.map */
