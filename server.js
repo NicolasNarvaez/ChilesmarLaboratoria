@@ -11,21 +11,42 @@ catch(e) {
 ////////////////////////////////////////////// load modules
 var express = require('express'),
   bodyParser = require('body-parser'),
-  app = express();
+
+  app = express(),
+  api_router = express.Router(),
+
+  model = require('./model.js'),
+  mongoose = model.mongoose;
+
+if(mongoose) {
+	model.config.dbURI = cfg.dbURI
+}
 
 ////////////////////////////////////////////// load config middlewares
 app.use(bodyParser.json())
 
+
 ////////////////////////////////////////////// load routes
-app.use(function(req, res, next) {
-	console.log('processing a request')
-	//console.dir(req, {depth:1})
-	next()
+app.use('/',  express.static("./public"))
+app.use('/doc',  express.static("./doc"))
+app.use('/api', api_router)
+
+api_router.route('/')
+.get(function(req, res) {
+	res.json({l:'api'})
 })
 
-// app.use('/api', )
-app.use('/',  express.static("./public"))
+api_router.route('/pescados')
+	.get(function(req, res) {
+	})
+
+api_router.route('/recetas')
+	.get(function(req,res) {
+	})
+
 
 ////////////////////////////////////////////// run server
-app.listen(cfg.port)
-console.log("running in "+cfg.port)
+model.connect(function() {
+	app.listen(cfg.port)
+	console.log("running in "+cfg.port)
+})
