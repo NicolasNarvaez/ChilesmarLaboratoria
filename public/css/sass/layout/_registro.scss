@@ -1,4 +1,5 @@
 //estilos aqui
+<<<<<<< HEAD
 
 //PERFIL PESCADOR 
 #registro{
@@ -19,3 +20,45 @@
  
 
 }
+=======
+#datos-pescadores{
+	margin-top: 5em;
+}
+
+#datos-pescadores .mapa {
+	width: 100%;
+	height: 572px;
+	background: #909090;
+}
+
+.jumbotron {
+	padding: 10px !important;
+}
+
+.jumbotron .img-perfil{
+	background:#909090;
+	width: 100%;
+	height: 149px;
+
+}
+
+.jumbotron .img-perfil-mas{
+	background:#909090;
+	width: 100%;
+	height: 206px;
+}
+
+.datos p {
+	font-size: 14px;
+}
+
+.datos-lorem p {
+	margin-top:10px;
+	font-size: 14px;
+}
+
+.jumbotron .tam{
+	width: 100%;
+	height:200px;
+}
+>>>>>>> 4e536bf38037af029618aee20cfb9ade5b602237

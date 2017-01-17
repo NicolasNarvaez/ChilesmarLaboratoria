@@ -10,19 +10,35 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+<!-- <h1>hola</h1> -->
 <!--empieza-->
-<section id="nav"></section>
+<section id="nav">	
+</section>
 <!--termina-->
 <section id="banner"></section>
 <!--empieza-->
-<section id="ficha"></section>
-<!--termina-->
-<section id="datos"></section>
-<!--empieza-->
-<section id="registro">
-	<div class="container-fluid">
-		<div class="row">
-			<div></div>
+<section id="ficha" class="row">
+	<div class="tipo-prod col-lg-12">
+		<h2 class="text-center text-uppercase">especie</h2>
+		<img src="http://lorempixel.com/400/200/animals/" alt="producto" class="producto-ficha col-lg-5">
+		<p class="producto-ficha col-lg-5 text-center vertical-centered-text">
+			Caraterístcias del producto, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at fugiat facere optio quia nemo, qui error amet enim accusantium inventore odit, minus perferendis aspernatur dicta quo ipsam, ex? Excepturi.
+		</p>
+		<div class="col-lg-2 text-center">
+				<a href="registro-producto.html" class="btn-success col-lg-12">Ver detalle</a>
+				<a href="#" id="receta-btn" class="btn-success col-lg-12">Ver receta</a>
+		</div>
+	</div>
+	<div class="recetario col-lg-12">
+		<img src="http://lorempixel.com/400/200/food/" alt="receta" class="col-lg-5">
+		<p class="producto-ficha col-lg-5 text-center vertical-centered-text">
+		<div class="recipe col-lg-5">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint necessitatibus, iusto quis illum provident deleniti et suscipit totam explicabo rerum officia dicta. Illo ducimus, voluptate nesciunt iusto commodi quo quisquam!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eveniet cupiditate harum perferendis itaque, natus ducimus facilis, possimus a iure corrupti necessitatibus libero ab nulla quaerat magnam fugiat eos odio?
+		</div>
+		<div class="col-lg-2 text-center">
+				<a href="#" class="btn-success col-lg-12">Ver detalle</a>
+				<a href="#" class="btn-success col-lg-12 ocultar">Ocultar receta</a>
 		</div>
 	</div>
 
@@ -144,6 +160,127 @@
 
 </section>
 <!--termina-->
+<section id="datos"></section>
+<!--empieza-->
+<section id="registro"></section>
+<!--termina-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/ficha.js"></script>
+	<section id="nav">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">ChileEsMar</a>
+				</div>
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Enciclopedia</a></li>
+					<li><a href="#">Ingresar</a></li>
+					<li><a href="#">Registrarse</a></li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+	<section id="ficha"></section>
+	<!--termina-->
+	<section id="datos"></section>
+	<!--empieza-->
+	<section id="registro">
+		<div class="container-fluid">
+			<div class="row">
+				<div></div>
+			</div>
+		</div>
+	</section>
+	<!--termina-->
+	<!--empieza-->
+	<section id="datos-pescadores">
+		<div class="container-fluid">
+			<div class="row">
+				<div>
+					<div class="col-md-4">
+						<div class="mapa"></div>
+					</div>
+					<div class="col-md-4">
+						<div>
+							<div class="jumbotron">
+								<div class="row">
+									<div class="col-md-5">
+										<div class="img-perfil"></div>
+									</div>
+									<div class="col-md-6">
+										<div class="datos">
+											<h4>Datos pescador:</h4>
+											<p>Nombre:</p>
+											<p>Región:</p>
+											<p>Cuidad:</p>
+											<p>Comuna:</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="jumbotron tam">
+								<div class="row">
+									<div class="col-md-12">
+										<h4>Relacionado</h4>
+										<div class="img-perfil-mas"></div>
+										<div class="datos-lorem">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolor quo quidem eos placeat eligendi. Error iste molestias quia sed deleniti! </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="jumbotron">
+							<div class="row">
+								<div class="col-md-6"></div>
+								<div class="col-md-3"></div>
+								<div class="col-md-3"></div>
+							</div>
+							<div class="datos">
+								<h4>Datos:</h4>
+								<p>Especie:</p>
+								<p>Gr:</p>
+								<p>Captura:</p>
+								<p>Zona</p>
+							</div>
+						</div>
+						<div class="jumbotron tam">
+							<div class="row">
+								<div class="col-md-12">
+									<h4>Relacionado</h4>
+									<div class="img-perfil-mas"></div>
+									<div class="datos-lorem">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolor quo quidem eos placeat eligendi. Error iste molestias quia sed deleniti! </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--termina-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$('a[href*="#"]:not([href="#"])').click(function() {
+			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html, body').animate({scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}	
+		});
+	</script>
 </body>
 </html>
