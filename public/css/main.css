@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -5806,5 +5805,61 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+#nav .navbar-brand {
+  color: #008d92; }
+#nav ul .registro {
+  color: #008d92;
+  border: 1px solid #008d92;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 5px; }
+  #nav ul .registro:hover {
+    background-color: #99bfb5; }
+
+#banner {
+  background-color: #0a6067;
+  padding-bottom: 100px; }
+  #banner .mensaje {
+    color: #008d92;
+    margin-top: 150px;
+    margin-left: 380px;
+    width: 500px;
+    padding: 80px;
+    border: 1px solid #008d92; }
+  #banner span i {
+    margin-left: 615px;
+    margin-top: 50px;
+    font-size: 40px; }
+
+#enciclopedia {
+  border-top: 1px solid #E4E2F0;
+  padding-top: 30px; }
+  #enciclopedia h1 {
+    color: #008d92;
+    padding: 20px; }
+  #enciclopedia .style-enci {
+    margin-bottom: 10px; }
+    #enciclopedia .style-enci .especie {
+      color: #008d92;
+      padding: 30px;
+      padding-bottom: 60px;
+      border: 1px solid #E4E2F0; }
+      #enciclopedia .style-enci .especie:hover {
+        background-color: #64b0a8; }
+        #enciclopedia .style-enci .especie:hover .foto {
+          border: 1px solid #B5B4BF; }
+      #enciclopedia .style-enci .especie .foto {
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #E4E2F0;
+        margin-bottom: 15px; }
+
+footer {
+  margin-top: 30px;
+  background-color: #008d92; }
+  footer p {
+    padding: 50px; }
 
 /*# sourceMappingURL=main.css.map */
