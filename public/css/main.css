@@ -5809,6 +5809,8 @@ button.close {
     display: none !important; } }
 #nav .navbar-brand {
   color: #008d92; }
+#nav ul li a:hover {
+  color: #008d92; }
 #nav ul .registro {
   color: #008d92;
   border: 1px solid #008d92;
