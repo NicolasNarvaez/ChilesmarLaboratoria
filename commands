@@ -1,0 +1,3 @@
+./node_modules/jsdoc/jsdoc.js -d ./doc -t ./node_modules/minami -c jsdoc.conf .
+cd public/css
+	 sass --watch sass/global.scss:main.css
