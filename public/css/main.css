@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -5873,15 +5874,14 @@ footer {
   #ficha .recetario {
     margin-top: 20px; }
 
-#registro .mp-nombre {
+.mp-nombre {
   margin-top: 10%; }
-#registro .mp-editar {
-  margin-top: 5%; }
-#registro .mp-formulario-venta {
+
+.mp-editar {
+  margin-top: 2%; }
+
+.mp-formulario-venta {
   margin-top: 3%; }
-#registro .mp-medida {
-  margin-top: 2.5%;
-  margin-left: -2.5%; }
 
 #datos-pescadores {
   margin-top: 5em; }
