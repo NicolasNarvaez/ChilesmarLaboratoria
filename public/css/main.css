@@ -5806,18 +5806,16 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-<<<<<<< HEAD
-#registro .mp-nombre {
-  margin-top: 10%; }
-#registro .mp-editar {
-  margin-top: 5%; }
-#registro .mp-formulario-venta {
-  margin-top: 3%; }
-#registro .mp-medida {
-  margin-top: 2.5%;
-  margin-left: -2.5%; }
-=======
-<<<<<<< HEAD
+#nav {
+  border-bottom: 1px solid black; }
+
+.banner {
+  padding-top: 200px;
+  width: 300px;
+  height: 250px;
+  border: 1px solid #6C95D9;
+  background-color: red; }
+
 #ficha {
   padding: 30px 0; }
   #ficha h2 {
@@ -5829,16 +5827,15 @@ button.close {
     align-items: center;
     /* alineacion horizontal */
     justify-content: center; }
-=======
-#nav {
-  border-bottom: 1px solid black; }
 
-.banner {
-  padding-top: 200px;
-  width: 300px;
-  height: 250px;
-  border: 1px solid #6C95D9;
-  background-color: red; }
+.mp-nombre {
+  margin-top: 10%; }
+
+.mp-editar {
+  margin-top: 2%; }
+
+.mp-formulario-venta {
+  margin-top: 3%; }
 
 #datos-pescadores {
   margin-top: 5em; }
@@ -5871,7 +5868,5 @@ button.close {
 .jumbotron .tam {
   width: 100%;
   height: 200px; }
->>>>>>> 3e047119ac5c6c47f48d2bce5d5be5c9cbf73707
->>>>>>> 4e536bf38037af029618aee20cfb9ade5b602237
 
 /*# sourceMappingURL=main.css.map */

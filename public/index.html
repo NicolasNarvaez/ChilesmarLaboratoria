@@ -42,7 +42,7 @@
 		</div>
 	</div>
 
- <!-- PERFIL PESCADOR -->
+ <!-- PERFIL PESCADOR (MONSE) -->
  <div class="container-fluid">
      <div class="row">
          <div class="col-md-12 col-lg-12">
@@ -63,6 +63,7 @@
              <h2 class="text-center mp-nombre">ESPECIES A LA VENTA</h2>	
          </div>	
      </div>
+  <!-- especies -->
   <div class="container mp-formulario-venta">   
      <div class="row">
      	<div class="col-md-4 col-lg-4">
@@ -105,57 +106,109 @@
             </button>
      	</div>
      </div>
-   </div> 
+   </div>      
+   <!-- cantidad/gramaje de la oferta -->
    <div class="container mp-formulario-venta">
      <div class="row">
-     	<div class="col-md-3 col-lg-3">
+     	<div class="col-md-4 col-lg-4">
      	    <p>CANTIDAD</p>
-     	    <input type="text" class="form-control">	
-     	</div>
-     	<div class="col-md-1 col-lg-1 mp-medida">
-     	    <select class="form-control">
-                <option>Kg</option>
-                <option>uni</option>
+     	    <input type="text" class="form-control">
+     	    <select class="form-control mp-margen-bottom">
+                <option>Kilogramo</option>
+                <option>Unidad</option>
             </select>
         </div>
-        <div class="col-md-3 col-lg-3">
+        <div class="col-md-4 col-lg-4">
      	    <p>CANTIDAD</p>
      	    <input type="text" class="form-control">	
-     	</div>
-     	<div class="col-md-1 col-lg-1 mp-medida">
-     	    <select class="form-control">
-                <option>Kg</option>
-                <option>uni</option>
+     	    <select class="form-control mp-margen-bottom">
+                <option>Kilogramo</option>
+                <option>unidad</option>
             </select>
         </div>
-        <div class="col-md-3 col-lg-3">
+        <div class="col-md-4 col-lg-4">
      	    <p>CANTIDAD</p>
-     	    <input type="text" class="form-control">	
-     	</div>
-     	<div class="col-md-1 col-lg-1 mp-medida">
-     	    <select class="form-control">
-                <option>Kg</option>
-                <option>uni</option>
+     	    <input type="text" class="form-control">
+     	    <select class="form-control mp-margen-bottom">
+                <option>Kilogramo</option>
+                <option>Unidad</option>
             </select>
         </div>
      </div>
    </div>
-   <div class="container mp-formulario-venta">
+   <!-- precio -->
+   <div class="container">
        <div class="row">
-           <div class="col-md-4 col-lg-4">
+           <div class="col-md-4 col-lg-4 mp-editar">
      	        <p>PRECIO</p>
      	        <input type="text" class="form-control" placeholder="$">   	
            </div>
-           <div class="col-md-4 col-lg-4">
+           <div class="col-md-4 col-lg-4 mp-editar">
      	        <p>PRECIO</p>
      	        <input type="text" class="form-control" placeholder="$">   	
            </div>
-           <div class="col-md-4 col-lg-4">
+           <div class="col-md-4 col-lg-4 mp-editar">
      	        <p>PRECIO</p>
      	        <input type="text" class="form-control" placeholder="$">   	
            </div>	
        </div>
     </div>
+    <!-- metodo de captura -->
+    <div class="row">
+        <div class="container">
+    	    <div class="col-md-4 col-lg-4 text-left mp-editar">
+    		    <P>METODO DE CAPTURA</P>
+    		</div>
+    		<div class="col-md-8 col-lg-8 pull-left mp-editar">    
+     	        <select class="form-control">
+                    <option>Arrastre</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+    	    </div>
+    	</div>    
+    </div>
+    <!-- información de venta del pescador (tabla con ofertas vigentes) -->
+    <div class="container">         
+       <table class="table table-striped mp-editar">
+           <thead>
+               <tr>
+                   <th>ESPECIE</th>
+                   <th>CANTIDAD</th>
+                   <th>PRECIO</th>
+                   <th>METODO DE CAPTURA</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>Lorem</td>
+                   <td>00</td>
+                   <td>$0000</td>
+                   <td>scelerisque</td>
+               </tr>
+               <tr>
+                   <td>Ipsum</td>
+                   <td>00</td>
+                   <td>$0000</td>
+                   <td>volutpat</td>
+               </tr>
+               <tr>
+                   <td>Curabitur</td>
+                   <td>00</td>
+                   <td>$0000</td>
+                   <td>scelerisque</td>
+               </tr>
+               <tr>
+                   <td>Aliquam</td>
+                   <td>00</td>
+                   <td>$0000</td>
+                   <td>volutpat</td>
+               </tr>
+           </tbody>
+       </table>
+   </div>
  </div>
 
 </section>
@@ -269,6 +322,7 @@
 	</section>
 	<!--termina-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/perfil.js"></script>
 	<script>
 		$('a[href*="#"]:not([href="#"])').click(function() {
 			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
