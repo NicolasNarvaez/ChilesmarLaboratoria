@@ -1,3 +1,3 @@
-$(document).ready(function(){
-    $("#perfil").hide();
-});
+// $(document).ready(function(){
+//     $("#perfil").hide();
+// });
