@@ -4291,8 +4291,8 @@ a.badge:hover, a.badge:focus {
   cursor: pointer; }
 
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin-bottom: 30px;
   color: inherit;
   background-color: #eeeeee; }
@@ -4313,8 +4313,8 @@ a.badge:hover, a.badge:focus {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron {
-      padding-top: 48px;
-      padding-bottom: 48px; }
+      padding-top: 40px;
+      padding-bottom: 40px; }
       .container .jumbotron, .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
@@ -5806,5 +5806,36 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+#datos-pescadores {
+  margin-top: 2em; }
+
+#datos-pescadores .mapa {
+  width: 100%;
+  height: 606px;
+  background: #909090; }
+
+.jumbotron {
+  padding: 10px !important; }
+
+.jumbotron .img-perfil {
+  background: #909090;
+  width: 100%;
+  height: 149px; }
+
+.jumbotron .img-perfil-mas {
+  background: #909090;
+  width: 100%;
+  height: 206px; }
+
+.datos p {
+  font-size: 14px; }
+
+.datos-lorem p {
+  margin-top: 10px;
+  font-size: 14px; }
+
+.jumbotron .tam {
+  width: 100%;
+  height: 378px; }
 
 /*# sourceMappingURL=main.css.map */
