@@ -11,14 +11,19 @@ module.exports = (function() {
 	var config = {dbURI: null},
 	interface_obj,
 	connect,
-	Persona,
-	PersonaSchema,
-	Pescado,
-	PescadoSchema,
+	Auth,
+	AuthSchema,
+	Pescador,
+	PescadorSchema,
+
+	Especie,
+	EspecieSchema,
+	Producto,
+	ProductoSchema,
 	Receta,
 	RecetaSchema,
-	Mercado,
-	MercadoSchema;
+	Calificacion,
+	CalificacionSchema;
 
 	/**
 	@namespace modelo
@@ -28,52 +33,76 @@ module.exports = (function() {
 		SchemaObjId = Schema.Types.ObjectId;
 
 		/**
-		@class Persona
+		@class Usuario
 		@memberof modelo
 		@prop {String} Nombre
 		*/
-		PersonaSchema = new Schema({
+		AuthSchema = new Schema({
 			nombre: String,
-			key: String,
-			sess_id: String,
-			date_created: Number,
-			votos_recetas: {},  //diferentes colecciones, indices inter-repetibles
-			votos_mercados: {}
+			clave: String,
+			email: String,
+			user: {type: Schema.ObjectId, ref: 'Pescador'},
+			georef: {
+				type: [Number],  // [<longitude>, <latitude>]
+				index: '2d'      // create the geospatial index
+			},
+			auth_token: String,
 		});
+		Auth = mongoose.model('Auth', AuthSchema);
 
-		PescadoSchema = new Schema({
+		/**
+		@class Pescador
+		@memberof modelo
+		@prop {String} Nombre
+		*/
+		PescadorSchema = new Schema({
+			metodo_captura: String,
+			productos: [{type: Schema.ObjectId, ref: 'Producto'}],
+			foto: String,
+			token_gobierno: String,
+			tienda_georef: {
+				type: [Number],  // [<longitude>, <latitude>]
+				index: '2d'      // create the geospatial index
+			},
+			descripcion: String,
+			telefono: String
+		});
+		Pescador = mongoose.model('Pescador', PescadorSchema);
+
+		EspecieSchema = new Schema({
 			nombre: String,
 			foto: String,
-			foto_grande: String,
-			desc: String,
-			informacion: String
+			descripcion: String
 		});
-		Pescado = mongoose.model('Pescado', PescadoSchema);
+		Especie = mongoose.model('Especie', EspecieSchema);
 
-		/*
+		ProductoSchema = new Schema({
+			pescador: {type: Schema.ObjectId, ref: 'Pescador'},
+			especie: {type: Schema.ObjectId, ref: 'Especie'},
+			cantidad: Number,
+			precio: Number
+		});
+		Producto = mongoose.model('Producto', ProductoSchema);
+
 		RecetaSchema = new Schema({
+			ingredientes: [{type: Schema.ObjectId, ref: 'Producto'}],
+			foto: String,
 			nombre: String,
 			desc: String,
-			foto: String,
-			pescados: [SchemaObjId],
-			feedback: Number,
-			votos: Number
+			precio: Number,
+			puntos: Number,
+			votos: Number,
 		})
 		Receta = mongoose.model('Receta', RecetaSchema);
-		*/
 
-		MercadoSchema = new Schema({
-			nombre: String,
-			dir: String,
-			desc: String,
-			foto: String,
-			pescados: [SchemaObjId],
-			feedback: Number,
-			votos: Number
+		CalificacionSchema = new Schema({
+			usuario: {type: Schema.ObjectId, ref: 'Auth'},
+			receta: {type: Schema.ObjectId, ref: 'Receta'},
+			puntos: Number
 		})
-		Mercado = mongoose.model('Mercado', MercadoSchema);
+		Calificacion = mongoose.model('Calificacion', RecetaSchema);
 	}
-
+	mongoose = false
 	connect = function(callback) {
 		if(!mongoose)	{
 		  if(callback)
@@ -96,8 +125,6 @@ module.exports = (function() {
 
 	}
 
-	mongoose = false
-
   interface_obj = {
     connect: connect,
     connection: null,
@@ -105,12 +132,14 @@ module.exports = (function() {
     SchemaObjId: SchemaObjId,
     config: config,
 
-    Mercado: Mercado,
-    MercadoSchema: MercadoSchema,
+    Auth: Auth,
+    AuthSchema: AuthSchema,
+	Pescador: Pescador,
+    PescadorSchema: PescadorSchema,
     Receta : Receta,
     RecetaSchema : RecetaSchema,
-    Pescado: Pescado,
-    PescadoSchema: PescadoSchema
+    Especie: Especie,
+    EspecieSchema: EspecieSchema
   };
   return interface_obj;
 })();
