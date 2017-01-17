@@ -6,9 +6,12 @@ $( document ).ready(function() {
 	$("#enciclopedia").hide();
 	$(".mod").hide();
 
-	 $(".fa-sort-desc").click(function(){  		
-  		$("#banner").slideUp();
-  	});
+	 // $(".fa-sort-desc").click(function(){  		
+  // 		$("#banner").slideUp();
+  // 	});
+  	$( window ).scroll(function() {
+  		$( "#banner" ).slideUp( "slow" );
+	});
 
 	$( "#receta-btn" ).click(function() {
   		$( ".recetario" ).slideDown("slow");
