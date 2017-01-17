@@ -5806,5 +5806,14 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+#registro .mp-nombre {
+  margin-top: 10%; }
+#registro .mp-editar {
+  margin-top: 5%; }
+#registro .mp-formulario-venta {
+  margin-top: 3%; }
+#registro .mp-medida {
+  margin-top: 2.5%;
+  margin-left: -2.5%; }
 
 /*# sourceMappingURL=main.css.map */
