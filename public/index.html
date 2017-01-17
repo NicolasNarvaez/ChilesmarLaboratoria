@@ -10,15 +10,15 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
-	<section id="nav">
-		<nav class="navbar navbar-default navbar-fixed-top">
+<!--empieza-->
+<section id="nav">
+	<nav class="navbar navbar-default navbar-fixed-top">
 	  		<div class="container">
 	   			<div class="navbar-header">
 	      			<a class="navbar-brand" href="#">CHILE ES MAR</a>
 	    		</div>
 	    		<ul class="nav navbar-nav pull-right">
-	    			<li><a href="#enciclopedia">Enciclopedia de especies</a></li>
+	    			<li><a href="#enciclopedia" id="enciclopedia-btn">Enciclopedia de especies</a></li>
 			    	<li><a href="#">Enlace 1</a></li>
 			    	<li><a href="#">Enlace 2</a></li>
 			      	<li><a class="registro" href="#">Ingresar</a></li>
@@ -26,9 +26,10 @@
 	    		</ul>
 	  		</div>
 		</nav>
-	</section>
-	
-	<section id="banner">
+</section>
+<div id="modulo"></div>
+<!--termina-->
+<section id="banner">
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<div class="mensaje">
@@ -37,7 +38,70 @@
 			</div>
 		</div>
 		<span><a href="#ficha"><i class="fa fa-sort-desc" aria-hidden="true"></i></a></span>
-	</section>
+</section>
+<!--empieza-->
+<section id="ficha" class="row">
+	<div class="tipo-prod col-lg-12">
+		<h2 class="text-center text-uppercase">especie</h2>
+		<img src="http://lorempixel.com/400/200/animals/" alt="producto" class="producto-ficha col-lg-5">
+		<p class="producto-ficha col-lg-5 text-center vertical-centered">
+			Caraterístcias del producto, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at fugiat facere optio quia nemo, qui error amet enim accusantium inventore odit, minus perferendis aspernatur dicta quo ipsam, ex? Excepturi.
+		</p>
+		<div class="col-lg-2 text-center">
+				<a href="#" class="btn-success col-lg-12" id="info">
+				<i class="fa fa-info-circle" aria-hidden="true"></i>Descubre más</a>
+				<a href="#" id="receta-btn" class="btn-success col-lg-12">
+					<i class="fa fa-cutlery" aria-hidden="true"></i>
+					Recetas
+				</a>
+		</div>
+	</div>
+	<div class="recetario col-lg-12">
+		<img src="http://lorempixel.com/400/200/food/" alt="receta" class="col-lg-5">
+		<p class="producto-ficha col-lg-5 text-center">
+		<div class="recipe col-lg-5">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint necessitatibus, iusto quis illum provident deleniti et suscipit totam explicabo rerum officia dicta. Illo ducimus, voluptate nesciunt iusto commodi quo quisquam!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eveniet cupiditate harum perferendis itaque, natus ducimus facilis, possimus a iure corrupti necessitatibus libero ab nulla quaerat magnam fugiat eos odio?
+		</div>
+		<div class="col-lg-2 text-center">
+				<a href="#" class="btn-success col-lg-12" id="info">
+				<i class="fa fa-info-circle" aria-hidden="true"></i>Descubre más</a>
+				<a href="#" class="btn-success col-lg-12 ocultar"><i class="fa fa-eject" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</section>
+	<section class="datos-pescadores-padre"></section>
+<!-- <section id="ficha" class="row">
+	<div class="tipo-prod col-lg-12">
+		<h2 class="text-center text-uppercase">especie</h2>
+		<img src="http://lorempixel.com/400/200/animals/" alt="producto" class="producto-ficha col-lg-5">
+		<p class="producto-ficha col-lg-5 text-center vertical-centered">
+			Caraterístcias del producto, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at fugiat facere optio quia nemo, qui error amet enim accusantium inventore odit, minus perferendis aspernatur dicta quo ipsam, ex? Excepturi.
+		</p>
+		<div class="col-lg-2 text-center">
+				<a href="#" class="btn-success col-lg-12" id="info">
+				<i class="fa fa-info-circle" aria-hidden="true"></i>Descubre más</a>
+				<a href="#" id="receta-btn" class="btn-success col-lg-12">
+					<i class="fa fa-cutlery" aria-hidden="true"></i>
+					Recetas
+				</a>
+		</div>
+	</div>
+	<div class="recetario col-lg-12">
+		<img src="http://lorempixel.com/400/200/food/" alt="receta" class="col-lg-5">
+		<p class="producto-ficha col-lg-5 text-center">
+		<div class="recipe col-lg-5">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint necessitatibus, iusto quis illum provident deleniti et suscipit totam explicabo rerum officia dicta. Illo ducimus, voluptate nesciunt iusto commodi quo quisquam!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eveniet cupiditate harum perferendis itaque, natus ducimus facilis, possimus a iure corrupti necessitatibus libero ab nulla quaerat magnam fugiat eos odio?
+		</div>
+		<div class="col-lg-2 text-center">
+				<a href="registro-producto.html" class="btn-success col-lg-12">
+				<i class="fa fa-info-circle" aria-hidden="true"></i>Descubre más</a>
+				<a href="#" class="btn-success col-lg-12 ocultar"><i class="fa fa-eject" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</section> -->
+
 
 	<section id="ficha" class="row">
 		<div class="tipo-prod col-lg-12">
@@ -49,23 +113,94 @@
 			<div class="col-lg-2 text-center">
 				<a href="registro-producto.html" class="btn-success col-lg-12">Ver detalle</a>
 				<a href="#" id="receta-btn" class="btn-success col-lg-12">Ver receta</a>
+<!--termina-->
+	<section id="datos"></section>
+<!--empieza-->
+	<section id="registro">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Registro</h2>
+					<br>
+					<form>
+						<div class="form-group">
+							<label for="exampleInputName">Nombre Completo</label>
+							<input type="name" class="form-control" id="exampleInputName" placeholder="Nombre">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputFile">Seleccionar Foto de Perfil</label>
+							<input type="file" id="exampleInputFile">
+						</div>
+		<div class="form-group">
+			<label for="exampleInputtoken">Ingresa Token</label>
+			<input type="name" class="form-control" id="exampleInputName" placeholder="Token">
+		</div>
+		<h5>Ubicación</h5>
+		<select id="regiones">
+			<option value="sin-region">--</option>
+			<option value="Arica y Parinacota">Arica y Parinacota</option>
+			<option value="Tarapacá">Tarapacá</option>
+			<option value="Antofagasta">Antofagasta</option>
+			<option value="Atacama">Atacama</option>
+			<option value="Coquimbo">Coquimbo</option>
+			<option value="Valparaíso">Valparaíso</option>
+			<option value="Región del Libertador Gral. Bernardo O'Higgins">Región del Libertador Gral. Bernardo O'Higgins</option>
+			<option value="Región del Maule">Región del Maule</option>
+			<option value="Región del Biobío">Región del Biobío</option>
+			<option value="Región de la Araucanía">Región de la Araucanía</option>
+			<option value="Región de los Ríos">Región de los Ríos</option>
+			<option value="Región de los Lagos">Región de los Lagos</option>
+			<option value="Región Aisén del Gral. Carlos Ibañez del Campo">Región Aisén del Gral. Carlos Ibañez del Campo</option>
+			<option value="Región de Magallanes y de la Antartica Chilena">Región de Magallanes y de la Antartica Chilena</option>
+			<option value="Región Metropolitana de Santiago">Región Metropolitana de Santiago</option>
+		</select>
+		<select id="comunas">
+			<option value="sin-region">Seleccione comuna</option>
+			<option value="sin-region">--</option>
+			<option value="sin-region">Seleccione región</option>
+		</select>
+		<div class="row">
+			<div class="col-md-6">
+				<br>
+				<textarea class="form-control" rows="3">Descripción Ubicación</textarea>
+
 			</div>
 		</div>
-		<div class="recetario col-lg-12">
-			<img src="http://lorempixel.com/400/200/food/" alt="receta" class="col-lg-5">
-			<p class="producto-ficha col-lg-5 text-center vertical-centered-text">
-				<div class="recipe col-lg-5">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint necessitatibus, iusto quis illum provident deleniti et suscipit totam explicabo rerum officia dicta. Illo ducimus, voluptate nesciunt iusto commodi quo quisquam!
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eveniet cupiditate harum perferendis itaque, natus ducimus facilis, possimus a iure corrupti necessitatibus libero ab nulla quaerat magnam fugiat eos odio?
-				</div>
-				<div class="col-lg-2 text-center">
-					<a href="#" class="btn-success col-lg-12">Ver detalle</a>
-					<a href="#" class="btn-success col-lg-12 ocultar">Ocultar receta</a>
-				</div>
+		<div class="row">
+			<div class="col-md-6">
+				<form>
+					<div class="form-group">
+							<label for="exampleInputMail">Correo Electrónico</label>
+						<input type="mail" class="form-control" id="exampleInputMail" placeholder="alguien@ejemplo.com">
+					</div>
+				</form>
 			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<form>
+					<div class="form-group">
+						<label for="exampleInputFono">Telefono</label>
+						<input type="fono" class="form-control" id="exampleInputFono" placeholder="">
+					</div>
+					<div class="form-group">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Recordar datos
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-default">Registrarse</button>
+					</div>
+				</form>
+			</div>
+		</div>
+</section>
 
-			<!-- PERFIL PESCADOR -->
-			<div class="container-fluid">
+<!--termina-->
+<!-- PERFIL PESCADOR -->
+			<div class="container-fluid perfil-pescador">
 				<div class="row">
 					<div class="col-md-12 col-lg-12">
 						<h2 class="text-center">PERFIL</h2>	
@@ -180,91 +315,6 @@
 				</div>
 			</div>
 	</section>
-
-	<section id="registro">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6">
-					<h2>Registro</h2>
-					<br>
-					<form>
-						<div class="form-group">
-							<label for="exampleInputName">Nombre Completo</label>
-							<input type="name" class="form-control" id="exampleInputName" placeholder="Nombre">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputFile">Seleccionar Foto de Perfil</label>
-							<input type="file" id="exampleInputFile">
-						</div>
-		<div class="form-group">
-			<label for="exampleInputtoken">Ingresa Token</label>
-			<input type="name" class="form-control" id="exampleInputName" placeholder="Token">
-		</div>
-		<h5>Ubicación</h5>
-		<select id="regiones">
-			<option value="sin-region">--</option>
-			<option value="Arica y Parinacota">Arica y Parinacota</option>
-			<option value="Tarapacá">Tarapacá</option>
-			<option value="Antofagasta">Antofagasta</option>
-			<option value="Atacama">Atacama</option>
-			<option value="Coquimbo">Coquimbo</option>
-			<option value="Valparaíso">Valparaíso</option>
-			<option value="Región del Libertador Gral. Bernardo O'Higgins">Región del Libertador Gral. Bernardo O'Higgins</option>
-			<option value="Región del Maule">Región del Maule</option>
-			<option value="Región del Biobío">Región del Biobío</option>
-			<option value="Región de la Araucanía">Región de la Araucanía</option>
-			<option value="Región de los Ríos">Región de los Ríos</option>
-			<option value="Región de los Lagos">Región de los Lagos</option>
-			<option value="Región Aisén del Gral. Carlos Ibañez del Campo">Región Aisén del Gral. Carlos Ibañez del Campo</option>
-			<option value="Región de Magallanes y de la Antartica Chilena">Región de Magallanes y de la Antartica Chilena</option>
-			<option value="Región Metropolitana de Santiago">Región Metropolitana de Santiago</option>
-		</select>
-		<select id="comunas">
-			<option value="sin-region">Seleccione comuna</option>
-			<option value="sin-region">--</option>
-			<option value="sin-region">Seleccione región</option>
-		</select>
-		<div class="row">
-			<div class="col-md-6">
-				<br>
-				<textarea class="form-control" rows="3">Descripción Ubicación</textarea>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<form>
-					<div class="form-group">
-							<label for="exampleInputMail">Correo Electrónico</label>
-						<input type="mail" class="form-control" id="exampleInputMail" placeholder="alguien@ejemplo.com">
-					</div>
-				</form>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<form>
-					<div class="form-group">
-						<label for="exampleInputFono">Telefono</label>
-						<input type="fono" class="form-control" id="exampleInputFono" placeholder="">
-					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Recordar datos
-							</label>
-						</div>
-					</div>
-					<div class="form-group">
-						<button type="submit" class="btn btn-default">Registrarse</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</section>	
-									
-		
-
-
 	<section id="datos-pescadores">
 		<div class="container-fluid">
 			<div class="row">
@@ -335,9 +385,6 @@
 			</div>
 		</div>
 	</section>
-
-
-
 	<section id="enciclopedia">
 		<div class="container-fluid">
 			<div class="row">
@@ -452,8 +499,9 @@
 		</div>
 	</section>
 	<footer>
-		<p>Desarrollado por Squad Las Pincoyas, TalentFest 2017. Laboratoria Chile</p>
+		<span>Desarrollado por Squad Las Pincoyas, TalentFest 2017. Laboratoria Chile</span>
 	</footer>
+	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
@@ -472,6 +520,7 @@
 		});
 	</script>
 	<script type="text/javascript" src="js/ficha.js"></script>
+	<script type="text/javascript" src="js/registro.js"></script>
 </body>
 </html>
 	

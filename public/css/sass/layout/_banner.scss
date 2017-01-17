@@ -1,5 +1,5 @@
 //estilos aqui
-#nav {
+#nav {	
 	.navbar-brand {
 		color:#008d92;
 	}
@@ -18,10 +18,6 @@
 			}
 		}
 	}
-
-
-
-
 
 }
 
@@ -81,9 +77,11 @@
 }
 
 footer {
-	margin-top:30px;
+	// position: absolute;
+	// bottom: 
 	background-color: #008d92;
-	p {
-		padding:50px;
-	}
+	width:100%;
+	height: 30px;
+	padding-top: 10px;
+	padding-left: 10px;
 }
