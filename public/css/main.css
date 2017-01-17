@@ -5806,12 +5806,22 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+#nav {
+  border-bottom: 1px solid black; }
+
+.banner {
+  padding-top: 200px;
+  width: 300px;
+  height: 250px;
+  border: 1px solid #6C95D9;
+  background-color: red; }
+
 #datos-pescadores {
-  margin-top: 2em; }
+  margin-top: 5em; }
 
 #datos-pescadores .mapa {
   width: 100%;
-  height: 606px;
+  height: 572px;
   background: #909090; }
 
 .jumbotron {
@@ -5836,6 +5846,6 @@ button.close {
 
 .jumbotron .tam {
   width: 100%;
-  height: 378px; }
+  height: 200px; }
 
 /*# sourceMappingURL=main.css.map */
